@@ -7,7 +7,7 @@ Create a three tier application (presentation layer, application layer and datab
 ## Goal Requirements
 
 1. Your solution must be hosted in GitHub.
-2. To obtain full marks, only the following two commands will be executed:
+2. To obtain full marks, only the following three commands will be executed:
 
     ```shell
     git clone https://github.com/[org/username]/DockerChallenge.git
