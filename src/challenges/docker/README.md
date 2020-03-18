@@ -15,7 +15,7 @@ Create a three tier application (presentation layer, application layer and datab
     docker-compose up
     ```
 
-3. The presentation layer container **must** be [NGNIX](https://hub.docker.com/_/nginx)
+3. The presentation layer container **must** be [NGINX](https://hub.docker.com/_/nginx)
 4. The application layer container **must** be [Node](https://hub.docker.com/_/node/)
 5. The database layer container **must** be [PostgreSQL](https://hub.docker.com/_/postgres)
 6. Application layer must query the database for data. Doesn't matter what.
