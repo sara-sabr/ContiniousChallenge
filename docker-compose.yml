@@ -1,0 +1,17 @@
+version: '3.7'
+volumes:
+  postgres_data:
+    driver: local
+services:
+  postgres:
+    image: postgres:11
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-challenge}
+      POSTGRES_USER: ${POSTGRES_USER:-challenge}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Please set password for database user 'challenge'}
+    ports:
+      - 5432:5432
+
+
