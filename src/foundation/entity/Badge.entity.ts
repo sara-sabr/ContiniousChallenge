@@ -4,9 +4,8 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
     name: 'badge'
 })
 export class Badge {
-    @PrimaryGeneratedColumn({
-        type: "uuid"
-    })
+
+    @PrimaryGeneratedColumn("uuid")
     id: string;
 
     @Column()

@@ -8,9 +8,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-challenge}
-      POSTGRES_USER: ${POSTGRES_USER:-challenge}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Please set password for database user 'challenge'}
+      POSTGRES_DB: ${DB_DATABASE:-challenge}
+      POSTGRES_USER: ${DB_USERNAME:-challenge}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Please set password for database user 'challenge'}
     ports:
       - 5432:5432
 

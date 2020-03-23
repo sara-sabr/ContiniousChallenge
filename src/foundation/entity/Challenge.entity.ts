@@ -7,9 +7,7 @@ import { Scoreboard } from './Scoreboard.entity';
     name: 'challenge'
 })
 export class Challenge {
-    @PrimaryGeneratedColumn({
-        type: "uuid"
-    })
+    @PrimaryGeneratedColumn("uuid")
     id: string;
 
     @Column({name: 'name_key', unique: true})

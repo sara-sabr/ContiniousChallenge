@@ -6,9 +6,7 @@ import { Challenge } from './Challenge.entity';
 })
 export class Application {
 
-    @PrimaryGeneratedColumn({
-        type: "uuid"
-    })
+    @PrimaryGeneratedColumn("uuid")
     id: string;
 
     @ManyToOne(() => Challenge, challenge => challenge.applications)

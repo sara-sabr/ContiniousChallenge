@@ -5,13 +5,11 @@ import { Challenge } from './Challenge.entity';
     name: 'challenge_type'
 })
 export class ChallengeType {
-    @PrimaryGeneratedColumn({
-        type: "uuid"
-    })
+    @PrimaryGeneratedColumn("uuid")
     id: string;
 
     @Column({name: 'name_key', unique: true})
-    name_key: string;
+    nameKey: string;
 
     @Column()
     ordering: number;
