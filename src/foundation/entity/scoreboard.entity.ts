@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, ManyToOne, Column, CreateDateColumn, UpdateDateColumn, VersionColumn } from "typeorm";
-import { Challenge } from "./Challenge.entity";
+import { Challenge } from "./challenge.entity";
 
 @Entity({
     name: 'scoreboard'

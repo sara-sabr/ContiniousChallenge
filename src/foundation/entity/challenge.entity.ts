@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, VersionColumn, ManyToOne, OneToMany } from 'typeorm';
-import { ChallengeType } from './ChallengeType.entity';
-import { Application } from './Application.entity';
-import { Scoreboard } from './Scoreboard.entity';
+import { ChallengeType } from './challengeType.entity';
+import { Application } from './application.entity';
+import { Scoreboard } from './scoreboard.entity';
 
 @Entity({
     name: 'challenge'

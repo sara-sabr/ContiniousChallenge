@@ -1,5 +1,5 @@
 import {MigrationInterface, QueryRunner} from "typeorm";
-import { ChallengeType } from "../entity/ChallengeType.entity";
+import { ChallengeType } from "../entity/challengeType.entity";
 
 export class Initial1584974070131 implements MigrationInterface {
 

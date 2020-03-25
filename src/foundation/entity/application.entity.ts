@@ -1,5 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, VersionColumn, ManyToOne } from 'typeorm';
-import { Challenge } from './Challenge.entity';
+import { Challenge } from './challenge.entity';
 
 @Entity({
     name: 'application'
